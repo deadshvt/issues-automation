@@ -1,0 +1,35 @@
+{
+    "name": "issues-automation",
+    "version": "1.0.0",
+    "description": "Automated tests for issues management using Playwright and Allure",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "allure:generate": "allure generate ./allure-results --clean",
+        "allure:open": "allure open ./allure-report"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.45.1",
+        "@types/node": "^20.14.10",
+        "allure-playwright": "^2.15.1",
+        "playwright": "^1.45.1"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "allure-js-commons": "^2.15.1",
+        "ansi-regex": "^4.1.1",
+        "charenc": "^0.0.2",
+        "crypt": "^0.0.2",
+        "fsevents": "^2.3.2",
+        "is-buffer": "^1.1.6",
+        "md5": "^2.3.0",
+        "properties": "^1.2.1",
+        "strip-ansi": "^5.2.0",
+        "undici-types": "^5.26.5"
+    }
+}
